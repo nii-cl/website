@@ -178,6 +178,67 @@
   }
 }
 
+/*******************************************************************************
+ * Landscape (Stanford-style) two-row header
+ ******************************************************************************/
+
+.navbar-landscape {
+  padding: 0;
+  border-bottom: 4px solid var(--global-theme-color) !important;
+
+  // Override Bootstrap's flex row on the container
+  & > .container,
+  & > .container-fluid {
+    flex-direction: column;
+    align-items: stretch;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  // Row 1: lab title
+  .navbar-landscape-brand {
+    padding: 1.1rem 0 0.8rem;
+
+    .navbar-brand {
+      font-size: 1.4rem;
+      font-weight: 500;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  // Row 2: nav links
+  .navbar-landscape-links {
+    border-top: 1px solid var(--global-divider-color);
+    display: flex;
+    align-items: center;
+    padding: 0;
+
+    .navbar-collapse {
+      flex-grow: 1;
+      justify-content: center !important;
+    }
+
+    .navbar-nav {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0 auto;
+
+      .nav-link {
+        padding: 0.45rem 0.9rem;
+        font-size: 0.875rem;
+        letter-spacing: 0.01em;
+      }
+    }
+
+    .navbar-toggler {
+      margin-left: auto;
+      margin-top: 0.25rem;
+      margin-bottom: 0.25rem;
+    }
+  }
+}
+
 #search-toggle {
   padding: 0;
   border: 0;
