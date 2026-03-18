@@ -3,7 +3,8 @@ layout: page
 permalink: /people/
 title: people
 description: Members of the NII Computational Linguistics Lab.
-nav: false
+nav: true
+nav_order: 1
 ---
 
 <!-- _pages/people.md -->

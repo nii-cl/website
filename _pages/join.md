@@ -3,7 +3,8 @@ layout: page
 permalink: /join/
 title: join
 description: Information for prospective members of the NII Computational Linguistics Lab.
-nav: false
+nav: true
+nav_order: 5
 ---
 
 <!-- _pages/join.md -->
