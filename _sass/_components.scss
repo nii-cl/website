@@ -270,7 +270,7 @@ ul.task-list input[type="checkbox"] {
     align-items: center;
     gap: 0.45rem;
     font-size: 1.1rem;
-    font-weight: bold;
+    font-weight: 600;
     margin-bottom: 0.2rem;
   }
 
@@ -296,6 +296,22 @@ ul.task-list input[type="checkbox"] {
     display: block;
     font-size: 0.95rem;
   }
+}
+
+.people-section {
+  margin-bottom: 1.9rem;
+}
+
+.people-section h4 {
+  margin-bottom: 0.7rem;
+}
+
+.people-section h4::after {
+  content: "";
+  display: block;
+  width: 4rem;
+  margin-top: 0.55rem;
+  border-bottom: 1px solid var(--global-text-color-light);
 }
 
 .section-note {
