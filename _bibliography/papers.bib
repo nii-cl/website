@@ -113,3 +113,35 @@
   preview     = {wave-mechanics.gif},
   abbr        = {Vision}
 }
+
+@inproceedings{ho-etal-2020-constructing,
+  bibtex_show = {true},
+  title       = {Constructing A Multi-hop {QA} Dataset for Comprehensive Evaluation of Reasoning Steps},
+  author      = {Ho, Xanh and Duong Nguyen, Anh-Khoa and Sugawara, Saku and Aizawa, Akiko},
+  booktitle   = {Proceedings of the 28th International Conference on Computational Linguistics},
+  month       = dec,
+  year        = {2020},
+  address     = {Barcelona, Spain (Online)},
+  publisher   = {International Committee on Computational Linguistics},
+  url         = {https://aclanthology.org/2020.coling-main.580/},
+  doi         = {10.18653/v1/2020.coling-main.580},
+  pages       = {6609--6625},
+  abstract    = {A multi-hop question answering (QA) dataset aims to test reasoning and inference skills by requiring a model to read multiple paragraphs to answer a given question. However, current datasets do not provide a complete explanation for the reasoning process from the question to the answer. Further, previous studies revealed that many examples in existing multi-hop datasets do not require multi-hop reasoning to answer a question. In this study, we present a new multi-hop QA dataset, called 2WikiMultiHopQA, which uses structured and unstructured data. In our dataset, we introduce the evidence information containing a reasoning path for multi-hop questions. The evidence information has two benefits: (i) providing a comprehensive explanation for predictions and (ii) evaluating the reasoning skills of a model. We carefully design a pipeline and a set of templates when generating a question-answer pair that guarantees the multi-hop steps and the quality of the questions. We also exploit the structured format in Wikidata and use logical rules to create questions that are natural but still require multi-hop reasoning. Through experiments, we demonstrate that our dataset is challenging for multi-hop models and it ensures that multi-hop reasoning is required.},
+  abbr        = {COLING}
+}
+
+@inproceedings{sugawara-etal-2018-makes,
+  bibtex_show = {true},
+  title = {What Makes Reading Comprehension Questions Easier?},
+  author = {Sugawara, Saku  and Inui, Kentaro  and Sekine, Satoshi  and Aizawa, Akiko},
+  editor = {Riloff, Ellen  and Chiang, David  and Hockenmaier, Julia  and Tsujii, Jun{'}ichi},
+  booktitle = {Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing},
+  month = oct # "-" # nov,
+  year = {2018},
+  address = {Brussels, Belgium},
+  publisher = {Association for Computational Linguistics},
+  url = {https://aclanthology.org/D18-1453/},
+  doi = {10.18653/v1/D18-1453},
+  pages = {4208--4219},
+  abstract = {A challenge in creating a dataset for machine reading comprehension (MRC) is to collect questions that require a sophisticated understanding of language to answer beyond using superficial cues. In this work, we investigate what makes questions easier across recent 12 MRC datasets with three question styles (answer extraction, description, and multiple choice). We propose to employ simple heuristics to split each dataset into easy and hard subsets and examine the performance of two baseline models for each of the subsets. We then manually annotate questions sampled from each subset with both validity and requisite reasoning skills to investigate which skills explain the difference between easy and hard questions. From this study, we observed that (i) the baseline performances for the hard subsets remarkably degrade compared to those of entire datasets, (ii) hard questions require knowledge inference and multiple-sentence reasoning in comparison with easy questions, and (iii) multiple-choice questions tend to require a broader range of reasoning skills than answer extraction and description questions. These results suggest that one might overestimate recent advances in MRC.}
+}
