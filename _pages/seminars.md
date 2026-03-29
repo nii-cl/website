@@ -5,6 +5,9 @@ title: seminars
 description: Lab seminar and reading group history.
 nav: true
 nav_order: 4
+_styles: >
+  table { width: 100%; border-collapse: collapse; }
+  table th, table td { border: 1px solid #000; padding: 0.5rem 0.75rem; }
 ---
 
 <!-- _pages/seminars.md -->
