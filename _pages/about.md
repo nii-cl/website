@@ -26,6 +26,4 @@ latest_posts:
   enabled: false
 ---
 
-Our group is based at National Institute of Informatics in Tokyo, Japan, working on natural language processing and computational linguistics. Our research includes reading comprehension, question answering, and the evaluation of language understanding in both humans and machines.
-
-**Principal Investigator:** [Saku Sugawara](https://penzant.net/) (Assistant Professor, NII)
+Our group is based at the National Institute of Informatics in Tokyo, Japan, and works on natural language processing and computational linguistics. Our research focuses on the evaluation of linguistic intelligence, language acquisition and processing in humans and models, and the philosophy of computational linguistics.
