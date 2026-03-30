@@ -1,7 +1,8 @@
 ---
 layout: page
 permalink: /seminars/
-title: seminars
+title: Seminars
+nav_title: seminars
 description: Lab seminar and reading group history.
 nav: true
 nav_order: 4
@@ -12,6 +13,8 @@ _styles: >
 
 <!-- _pages/seminars.md -->
 <!-- TODO: render entries from _data/seminars.yml -->
+
+This seminar provides a forum for group members and invited guests to present and discuss ongoing research, including work in progress and recent findings.
 
 {% if site.data.seminars %}
 <table>
