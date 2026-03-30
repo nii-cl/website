@@ -31,7 +31,7 @@ ninja.data = [{
             window.location.href = "/research/";
           },
         },{id: "nav-seminars",
-          title: "seminars",
+          title: "Seminars",
           description: "Lab seminar and reading group history.",
           section: "Navigation",
           handler: () => {
