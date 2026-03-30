@@ -24,7 +24,7 @@ ninja.data = [{
             window.location.href = "/publications/";
           },
         },{id: "nav-research",
-          title: "research",
+          title: "Research",
           description: "Research themes of Sugawara Group at National Institute of Informatics.",
           section: "Navigation",
           handler: () => {
