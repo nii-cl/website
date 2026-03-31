@@ -522,6 +522,11 @@ ninja.data = [{
           description: "",
           section: "Members",handler: () => {
               window.location.href = "/members/xin-sun/";
+            },},{id: "members-yiwei-liu",
+          title: 'Yiwei Liu',
+          description: "",
+          section: "Members",handler: () => {
+              window.location.href = "/members/yiwei-liu/";
             },},{id: "members-yoko-kayano",
           title: 'Yoko Kayano',
           description: "",
