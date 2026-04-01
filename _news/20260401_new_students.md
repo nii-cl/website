@@ -1,7 +1,7 @@
 ---
 layout: post
 title: We welcome 3 new students
-date: 2026-03-28 00:00:00-0000
+date: 2026-04-01 00:00:00-0000
 inline: false
 related_posts: false
 ---
