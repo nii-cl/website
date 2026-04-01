@@ -1,16 +1,13 @@
 ---
 layout: post
-title: We welcome 3 new students
-date: 2026-04-01 00:00:00-0000
+title: We welcome three new students
+date: 2026-04-01 00:00:01-0000
 inline: false
 related_posts: false
 ---
 
-We welcome 3 new joiners from this April!
+We welcome three new students from this April!
 
----
-
-- Satoshi Hirose Master Student
-- Akira awabata Ph.D. Student
-- Mana Ashida Ph.D. Student
-- Yoko Kayano Master Student
+- Satoshi Hirose (master student)
+- Akira awabata (Ph.D. student)
+- Mana Ashida (Ph.D. student)
