@@ -8,6 +8,6 @@ related_posts: false
 
 We welcome three new students from this April!
 
-- Satoshi Hirose (master student)
-- Akira awabata (Ph.D. student)
+- Satoshi Hirose (Master's student)
+- Akira Kawabata (Ph.D. student)
 - Mana Ashida (Ph.D. student)
