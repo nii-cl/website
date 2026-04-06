@@ -84,6 +84,9 @@
     {% else %}
       {% capture entrytype %}{% endcapture %}
     {% endif %}
+    {% if entry.pages %}
+      {% capture entrytype %}{{ entrytype }}, pp. {{ entry.pages | replace: '--', '–' }}{% endcapture %}
+    {% endif %}
     {% assign entrymonth = '' %}
     {% if entry.month %}
       {% capture entrymonth %}{{ " " }}{{ entry.month | capitalize }}{% endcapture %}
@@ -103,11 +106,7 @@
       {% include hook/bib.liquid %}
     {% endif %}
     {% assign entrytype_text = entrytype | strip_html | strip %}
-    {% assign entrypages = '' %}
-    {% if entry.pages %}
-      {% capture entrypages %}, pp. {{ entry.pages | replace: '--', '–' }}{% endcapture %}
-    {% endif %}
-    {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{{ entrypages }}{% endcapture %}
+    {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}.{% endcapture %}
     <div class="periodical">
       {{ periodical | strip }}
     </div>

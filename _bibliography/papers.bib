@@ -306,16 +306,28 @@ pages     = {6706-6716}}
     abstract = "In this study, we create a CConS (Counter-commonsense Contextual Size comparison) dataset to investigate how physical commonsense affects the contextualized size comparison task; the proposed dataset consists of both contexts that fit physical commonsense and those that do not. This dataset tests the ability of language models to predict the size relationship between objects under various contexts generated from our curated noun list and templates. We measure the ability of several masked language models and encoder-decoder models. The results show that while large language models can use prepositions such as ``in'' and ``into'' in the provided context to infer size relationships, they fail to use verbs and thus make incorrect judgments led by their prior physical commonsense."
 }
 
-@article{Shinoda_Sugawara_Aizawa_2023, title={Which Shortcut Solution Do Question Answering Models Prefer to Learn?}, volume={37}, url={https://ojs.aaai.org/index.php/AAAI/article/view/26590}, DOI={10.1609/aaai.v37i11.26590}, abstract={Question answering (QA) models for reading comprehension tend to exploit spurious correlations in training sets and thus learn shortcut solutions rather than the solutions intended by QA datasets.
-QA models that have learned shortcut solutions can achieve human-level performance in shortcut examples where shortcuts are valid, but these same behaviors degrade generalization potential on anti-shortcut examples where shortcuts are invalid.
-Various methods have been proposed to mitigate this problem, but they do not fully take the characteristics of shortcuts themselves into account.
-We assume that the learnability of shortcuts, i.e., how easy it is to learn a shortcut, is useful to mitigate the problem.
-Thus, we first examine the learnability of the representative shortcuts on extractive and multiple-choice QA datasets.
-Behavioral tests using biased training sets reveal that shortcuts that exploit answer positions and word-label correlations are preferentially learned for extractive and multiple-choice QA, respectively.
-We find that the more learnable a shortcut is, the flatter and deeper the loss landscape is around the shortcut solution in the parameter space.
-We also find that the availability of the preferred shortcuts tends to make the task easier to perform from an information-theoretic viewpoint.
-Lastly, we experimentally show that the learnability of shortcuts can be utilized to construct an effective QA training set; the more learnable a shortcut is, the smaller the proportion of anti-shortcut examples required to achieve comparable performance on shortcut and anti-shortcut examples.
-We claim that the learnability of shortcuts should be considered when designing mitigation methods.}, number={11}, journal={Proceedings of the AAAI Conference on Artificial Intelligence}, author={Shinoda, Kazutoshi and Sugawara, Saku and Aizawa, Akiko}, year={2023}, month={Jun.}, pages={13564-13572} }
+@article{Shinoda_Sugawara_Aizawa_2023, 
+    title={Which Shortcut Solution Do Question Answering Models Prefer to Learn?}, 
+    volume={37}, 
+    url={https://ojs.aaai.org/index.php/AAAI/article/view/26590}, 
+    DOI={10.1609/aaai.v37i11.26590}, 
+    abstract={Question answering (QA) models for reading comprehension tend to exploit spurious correlations in training sets and thus learn shortcut solutions rather than the solutions intended by QA datasets.
+    QA models that have learned shortcut solutions can achieve human-level performance in shortcut examples where shortcuts are valid, but these same behaviors degrade generalization potential on anti-shortcut examples where shortcuts are invalid.
+    Various methods have been proposed to mitigate this problem, but they do not fully take the characteristics of shortcuts themselves into account.
+    We assume that the learnability of shortcuts, i.e., how easy it is to learn a shortcut, is useful to mitigate the problem.
+    Thus, we first examine the learnability of the representative shortcuts on extractive and multiple-choice QA datasets.
+    Behavioral tests using biased training sets reveal that shortcuts that exploit answer positions and word-label correlations are preferentially learned for extractive and multiple-choice QA, respectively.
+    We find that the more learnable a shortcut is, the flatter and deeper the loss landscape is around the shortcut solution in the parameter space.
+    We also find that the availability of the preferred shortcuts tends to make the task easier to perform from an information-theoretic viewpoint.
+    Lastly, we experimentally show that the learnability of shortcuts can be utilized to construct an effective QA training set; the more learnable a shortcut is, the smaller the proportion of anti-shortcut examples required to achieve comparable performance on shortcut and anti-shortcut examples.
+    We claim that the learnability of shortcuts should be considered when designing mitigation methods.}, 
+    number={11}, 
+    journal={Proceedings of the Association for the Advancement of  Artificial Intelligence Conference on Artificial Intelligence}, 
+    author={Shinoda, Kazutoshi and Sugawara, Saku and Aizawa, Akiko}, 
+    year={2023}, 
+    month={Jun.}, 
+    pages={13564-13572} 
+  }
 
 @inproceedings{ho-etal-2023-analyzing,
     title = "Analyzing the Effectiveness of the Underlying Reasoning Tasks in Multi-hop Question Answering",
@@ -343,7 +355,8 @@ We claim that the learnability of shortcuts should be considered when designing 
       eprint={2209.01824},
       archivePrefix={arXiv},
       primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2209.01824}, 
+      note={Preprint},
+      url={https://arxiv.org/abs/2209.01824},
 }
 
 @inproceedings{zhang-etal-2022-cross,
@@ -486,6 +499,7 @@ We claim that the learnability of shortcuts should be considered when designing 
       author={Kazutoshi Shinoda and Saku Sugawara and Akiko Aizawa},
       year={2022},
       eprint={2211.16093},
+      booktitle={Proceedings of the Workshop on Knowledge Augmented Methods for NLP (KnowledgeNLP) at the the Association for the Advancement of Artificial Intelligence},
       archivePrefix={arXiv},
       primaryClass={cs.CL},
       url={https://arxiv.org/abs/2211.16093}, 
@@ -636,7 +650,7 @@ We claim that the learnability of shortcuts should be considered when designing 
                   Akiko Aizawa},
   title        = {Assessing the Benchmarking Capacity of Machine Reading Comprehension
                   Datasets},
-  booktitle    = {{AAAI}},
+  booktitle    = {{Proceedings of the Association for the Advancement of  Artificial Intelligence Conference on Artificial Intelligence}},
   pages        = {8918--8927},
   publisher    = {{AAAI} Press},
   url = "https://ojs.aaai.org/index.php/AAAI/article/view/6422",
@@ -665,8 +679,7 @@ We claim that the learnability of shortcuts should be considered when designing 
       Kido, Yusuke  and
       Yokono, Hikaru  and
       Aizawa, Akiko",
-    editor = "Barzilay, Regina  and
-      Kan, Min-Yen",
+    editor = "Barzilay, Regina  and Kan, Min-Yen",
     booktitle = "Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
     month = jul,
     year = "2017",
@@ -678,7 +691,18 @@ We claim that the learnability of shortcuts should be considered when designing 
     abstract = "Knowing the quality of reading comprehension (RC) datasets is important for the development of natural-language understanding systems. In this study, two classes of metrics were adopted for evaluating RC datasets: prerequisite skills and readability. We applied these classes to six existing datasets, including MCTest and SQuAD, and highlighted the characteristics of the datasets according to each metric and the correlation between the two classes. Our dataset analysis suggests that the readability of RC datasets does not directly affect the question difficulty and that it is possible to create an RC dataset that is easy to read but difficult to answer."
 }
 
-@article{Sugawara_Yokono_Aizawa_2017, title={Prerequisite Skills for Reading Comprehension: Multi-Perspective Analysis of MCTest Datasets and Systems}, volume={31}, url={https://ojs.aaai.org/index.php/AAAI/article/view/10957}, DOI={10.1609/aaai.v31i1.10957}, abstract={One of the main goals of natural language processing (NLP) is synthetic understanding of natural language documents, especially reading comprehension (RC). An obstacle to the further development of RC systems is the absence of a synthetic methodology to analyze their performance. It is difficult to examine the performance of systems based solely on their results for tasks because the process of natural language understanding is complex. In order to tackle this problem, we propose in this paper a methodology inspired by unit testing in software engineering that enables the examination of RC systems from multiple aspects. Our methodology consists of three steps. First, we define a set of prerequisite skills for RC based on existing NLP tasks. We assume that RC capability can be divided into these skills. Second, we manually annotate a dataset for an RC task with information regarding the skills needed to answer each question. Finally, we analyze the performance of RC systems for each skill based on the annotation. The last two steps highlight two aspects: the characteristics of the dataset, and the weaknesses in and differences among RC systems. We tested the effectiveness of our methodology by annotating the Machine Comprehension Test (MCTest) dataset and analyzing four existing systems (including a neural system) on it. The results of the annotations showed that answering questions requires a combination of skills, and clarified the kinds of capabilities that systems need to understand natural language. We conclude that the set of prerequisite skills we define are promising for the decomposition and analysis of RC.}, number={1}, journal={Proceedings of the AAAI Conference on Artificial Intelligence}, author={Sugawara, Saku and Yokono, Hikaru and Aizawa, Akiko}, year={2017}, month={Feb.} }
+@article{Sugawara_Yokono_Aizawa_2017, 
+  title={Prerequisite Skills for Reading Comprehension: Multi-Perspective Analysis of MCTest Datasets and Systems}, 
+  volume={31}, 
+  url={https://ojs.aaai.org/index.php/AAAI/article/view/10957}, 
+  DOI={10.1609/aaai.v31i1.10957}, 
+  abstract={One of the main goals of natural language processing (NLP) is synthetic understanding of natural language documents, especially reading comprehension (RC). An obstacle to the further development of RC systems is the absence of a synthetic methodology to analyze their performance. It is difficult to examine the performance of systems based solely on their results for tasks because the process of natural language understanding is complex. In order to tackle this problem, we propose in this paper a methodology inspired by unit testing in software engineering that enables the examination of RC systems from multiple aspects. Our methodology consists of three steps. First, we define a set of prerequisite skills for RC based on existing NLP tasks. We assume that RC capability can be divided into these skills. Second, we manually annotate a dataset for an RC task with information regarding the skills needed to answer each question. Finally, we analyze the performance of RC systems for each skill based on the annotation. The last two steps highlight two aspects: the characteristics of the dataset, and the weaknesses in and differences among RC systems. We tested the effectiveness of our methodology by annotating the Machine Comprehension Test (MCTest) dataset and analyzing four existing systems (including a neural system) on it. The results of the annotations showed that answering questions requires a combination of skills, and clarified the kinds of capabilities that systems need to understand natural language. We conclude that the set of prerequisite skills we define are promising for the decomposition and analysis of RC.}, 
+  number={1}, 
+  journal={Proceedings of the Association for the Advancement of Artificial Intelligence Conference on Artificial Intelligence}, 
+  author={Sugawara, Saku and Yokono, Hikaru and Aizawa, Akiko}, 
+  year={2017}, 
+  month={Feb.} 
+}
 
 @inproceedings{kaneko-etal-2016-annotation,
     title = "Annotation and Analysis of Discourse Relations, Temporal Relations and Multi-Layered Situational Relations in {J}apanese Texts",
