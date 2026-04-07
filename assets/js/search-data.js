@@ -540,7 +540,10 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/20260401_new_students/";
-            },},{id: "projects-project-1",
+            },},{id: "news-four-papers-have-been-accepted-to-the-acl-2026-main-conference",
+          title: 'Four papers have been accepted to the ACL 2026 main conference.',
+          description: "",
+          section: "News",},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
           section: "Projects",handler: () => {
