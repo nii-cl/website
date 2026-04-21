@@ -547,7 +547,7 @@ ninja.data = [{
           title: 'Best Presentation Award at the 1st AAMT Translation &amp;amp; Interpretation Research Workshop',
           description: "",
           section: "News",handler: () => {
-              window.location.href = "/news/20260422_AAMT_award/";
+              window.location.href = "/news/20260422_aamt_best_presentation/";
             },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
