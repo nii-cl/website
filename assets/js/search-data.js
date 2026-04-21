@@ -543,7 +543,12 @@ ninja.data = [{
             },},{id: "news-four-papers-have-been-accepted-to-the-acl-2026-main-conference",
           title: 'Four papers have been accepted to the ACL 2026 main conference.',
           description: "",
-          section: "News",},{id: "projects-project-1",
+          section: "News",},{id: "news-best-presentation-award-at-the-1st-aamt-translation-amp-interpretation-research-workshop",
+          title: 'Best Presentation Award at the 1st AAMT Translation &amp;amp; Interpretation Research Workshop',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/20260422_AAMT_award/";
+            },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
           section: "Projects",handler: () => {
