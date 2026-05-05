@@ -21,7 +21,7 @@ def extract_arxiv_id(text: str) -> str:
 
 
 def fetch_metadata(arxiv_id: str) -> dict:
-    url = f"http://export.arxiv.org/api/query?id_list={arxiv_id}"
+    url = f"https://export.arxiv.org/api/query?id_list={arxiv_id}"
     resp = requests.get(url, timeout=30)
     resp.raise_for_status()
 
@@ -100,13 +100,22 @@ def main() -> None:
     issue_body = os.environ.get("ISSUE_BODY", "")
     bib_path = os.environ.get("BIB_PATH", "_bibliography/papers.bib")
 
+    # デフォルトのエラー出力を先に設定（スクリプトが途中で落ちても空にならないように）
+    set_output("success", "false")
+    set_output("error", "スクリプト実行中に予期しないエラーが発生しました")
+
     try:
         arxiv_id = extract_arxiv_id(issue_body)
+        print(f"arXiv ID: {arxiv_id}")
+
         meta = fetch_metadata(arxiv_id)
+        print(f"取得完了: {meta['title']}")
+
         bibtex, key = make_bibtex(meta)
         insert_into_bib(bibtex, bib_path, arxiv_id)
 
         set_output("success", "true")
+        set_output("error", "")
         set_output("arxiv_id", arxiv_id)
         set_output("title", meta["title"])
         set_output("key", key)
@@ -115,9 +124,9 @@ def main() -> None:
         set_output("month", meta["month"])
         print(f"追加完了: {key}")
     except Exception as e:
-        set_output("success", "false")
-        set_output("error", str(e))
-        print(f"エラー: {e}", file=sys.stderr)
+        error_msg = str(e) or type(e).__name__
+        set_output("error", error_msg)
+        print(f"エラー: {error_msg}", file=sys.stderr)
         sys.exit(1)
 
 
